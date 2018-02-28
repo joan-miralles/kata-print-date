@@ -1,7 +1,13 @@
 import java.util.Date;
 
 public class PrintDate {
-	public void printCurrentDate() {
-		System.out.println(new Date());
+    private final Printer printer;
+
+    public PrintDate(Printer printer) {
+        this.printer = printer;
+    }
+
+    public void printCurrentDate() {
+		printer.print(new Date());
 	}
 }
