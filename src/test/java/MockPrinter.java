@@ -8,7 +8,6 @@ public class MockPrinter implements Printer {
         this.printedDate = date;
     }
 
-    @Override
     public boolean isPrintCalledWith(Date date) {
         return date.toInstant().equals(printedDate.toInstant());
     }

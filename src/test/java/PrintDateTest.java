@@ -16,6 +16,6 @@ public class PrintDateTest {
 
 		printDate.printCurrentDate();
 
-		assertTrue(printer.isPrintCalledWith(new Date()));
+		assertTrue(((MockPrinter) printer).isPrintCalledWith(new Date()));
 	}
 }
