@@ -1,5 +1,3 @@
-package DateProvider;
-
 import java.util.Date;
 
 public class DateProvider {

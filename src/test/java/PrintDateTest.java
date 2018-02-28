@@ -1,4 +1,3 @@
-import DateProvider.DateProvider;
 import org.junit.Test;
 
 import java.util.Date;

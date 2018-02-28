@@ -1,5 +1,3 @@
-import DateProvider.DateProvider;
-
 public class PrintDate {
     private final Printer printer;
     private DateProvider dateProvider;
