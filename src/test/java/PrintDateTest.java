@@ -1,12 +1,16 @@
 import org.junit.Test;
 
+import java.util.Date;
+
 public class PrintDateTest {
-	@Test
+    private Printer printer;
+
+    @Test
 	public void printDate() throws Exception {
-		PrintDate printDate = new PrintDate();
+		PrintDate printDate = new PrintDate(printer);
 
 		printDate.printCurrentDate();
 
-		// How can we test this function?
+		printer.verifyCallPrintWith(new Date());
 	}
 }
